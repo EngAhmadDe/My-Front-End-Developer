@@ -22,3 +22,11 @@ function startCount(el) {
   }, 2000 / goal);
 }
 // Counter
+
+
+// loader
+setTimeout(() => {
+  document.getElementById("loader").style.display = "none";
+  document.body.style.overflow = "visible";
+}, "6000");
+
