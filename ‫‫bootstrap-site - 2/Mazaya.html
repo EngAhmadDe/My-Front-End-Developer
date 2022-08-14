@@ -122,7 +122,7 @@
     </nav>
     <!-- end navbar  -->
     <!-- start landing  -->
-    <div class="landing text-center" id="home">
+    <div class="landing text-center pb-5" id="home">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -163,13 +163,18 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-left-long arrow-top"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-right-long arrow-top"></i>
+          </div>
         </div>
-
         <p class="landtext text-white pt-4 pb-2">
           انضم إلى أكثر من 120 عميل وثقوا في خدماتنا على مدار أكثر من 10 سنوات
         </p>
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
+        <!-- large -->
+        <div class="swiper mySwiper d-lg-block d-none">
           <div class="swiper-wrapper">
             <div class="swiper-slide images-worker">
               <img src="imgs/worker/3e.jpg" class="img-fluid" alt="" />
@@ -179,7 +184,6 @@
               <img src="imgs/worker/d.png" class="img-fluid" alt="" />
               <img src="imgs/worker/gf.png" class="img-fluid" alt="" />
               <img src="imgs/worker/d.png" class="img-fluid" alt="" />
-              <img src="imgs/worker/gf.png" class="img-fluid" alt="" />
               <img src="imgs/worker/v.png" class="img-fluid" alt="" />
             </div>
             <div class="swiper-slide images-worker">
@@ -191,15 +195,94 @@
               <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
               <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
               <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
-              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
             </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-left-long arrow"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-right-long arrow"></i>
+          </div>
+        </div>
+        <!-- medium -->
+        <div class="medium pb-md-0 pt-md-0 pb-2 pt-3">
+          <div class="swiper mySwiper d-md-block d-none d-lg-none">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/3e.jpg" class="img-fluid" alt="" />
+                <img src="imgs/worker/a.png" class="img-fluid" alt="" />
+                <img src="imgs/worker/b.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/c.png" class="img-fluid" alt="" />
+                <img src="imgs/worker/d.png" class="img-fluid" alt="" />
+                <img src="imgs/worker/gf.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/d.png" class="img-fluid" alt="" />
+                <img src="imgs/worker/v.png" class="img-fluid" alt="" />
+                <img src="imgs/worker/w2.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next pb-5">
+              <i class="fa-solid fa-left-long arrow"></i>
+            </div>
+            <div class="swiper-button-prev pb-5">
+              <i class="fa-solid fa-right-long arrow"></i>
+            </div>
+            <div class="swiper-pagination pt-3"></div>
+          </div>
+        </div>
+        <!-- small -->
+        <div class="small pb-md-0 pt-md-0 pb-2 pt-3">
+          <div class="swiper mySwiper d-md-none d-block d-lg-none">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/3e.jpg" class="img-fluid" alt="" />
+              </div>
+
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/a.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/b.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/c.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/d.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/gf.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/d.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="swiper-slide images-worker">
+                <img src="imgs/worker/v.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next pb-5">
+              <i class="fa-solid fa-left-long arrow"></i>
+            </div>
+            <div class="swiper-button-prev pb-5">
+              <i class="fa-solid fa-right-long arrow"></i>
+            </div>
+            <div class="swiper-pagination pt-4"></div>
           </div>
         </div>
       </div>
     </div>
     <!-- end landing  -->
     <!-- start our-wrok  -->
-    <div class="our-work pt-5 pb-5" id="our-works">
+    <div class="our-work pt-5" id="our-works">
       <h5 class="fw-bold text-center">
         على مدار 10 سنوات ساهمنا في قصص نجاح العديد من المشاريع على الإنترنت
         والآن حان الوقت لبدء قصة نجاح مشروعك
@@ -209,51 +292,9 @@
         والتسويق, تعرف على بعض أعمالنا
       </p>
       <div class="container pt-5 pb-5">
-        <div
-          id="carouselExampleDark"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="indicator active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              class="indicator"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              class="indicator"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="3"
-              class="indicator"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="4"
-              class="indicator"
-              aria-label="Slide 5"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="6000">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div
                 class="content d-flex justify-content-between align-items-center"
               >
@@ -273,7 +314,7 @@
                 <img src="imgs/w1.jpg" class="d-block img-fluid" alt="..." />
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
+            <div class="swiper-slide">
               <div
                 class="content d-flex justify-content-center align-items-center"
               >
@@ -292,7 +333,7 @@
                 <img src="imgs/w2.jpg" class="d-block img-fluid" alt="..." />
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
+            <div class="swiper-slide">
               <div
                 class="content d-flex justify-content-center align-items-center"
               >
@@ -310,7 +351,7 @@
                 <img src="imgs/w3.jpg" class="d-block img-fluid" alt="..." />
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
+            <div class="swiper-slide">
               <div
                 class="content d-flex justify-content-center align-items-center"
               >
@@ -328,7 +369,7 @@
                 <img src="imgs/w4.jpg" class="d-block img-fluid" alt="..." />
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
+            <div class="swiper-slide">
               <div
                 class="content d-flex justify-content-center align-items-center"
               >
@@ -347,6 +388,13 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-left-long arrow"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-right-long arrow"></i>
+          </div>
+          <div class="swiper-pagination pt-5 mt-3"></div>
         </div>
       </div>
     </div>
@@ -704,6 +752,12 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-left-long arrow"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-right-long arrow"></i>
+          </div>
           <div class="swiper-pagination"></div>
         </div>
         <div class="swiper mySwiper d-lg-none d-md-block d-none">
@@ -823,6 +877,12 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-left-long arrow"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-right-long arrow"></i>
+          </div>
           <div class="swiper-pagination"></div>
         </div>
         <div class="swiper mySwiper d-lg-none d-md-none d-block">
@@ -932,6 +992,12 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-left-long arrow"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-right-long arrow"></i>
           </div>
           <div class="swiper-pagination"></div>
         </div>
