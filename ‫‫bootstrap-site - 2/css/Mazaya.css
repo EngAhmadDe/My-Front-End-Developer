@@ -125,11 +125,11 @@ ul {
 .twitter:hover {
   color: #1da1f2;
 }
-.youtube:hover {
-  color: #ff0000;
-}
 .instagram:hover {
   color: #fd1d1d;
+}
+.linkedin:hover {
+  color: #00a0dc;
 }
 .social a {
   color: #ffffffd1;
@@ -733,8 +733,8 @@ ul {
 .footer .linkedin {
   background-color: #0077b5;
 }
-.footer .youtube {
-  background-color: #ff0000;
+.footer .instagram {
+  background-color: #fd1d1d;
 }
 
 @media (min-width: 768px) {
