@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mazaya</title>
-
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/Mazaya.css" />
@@ -17,21 +17,6 @@
     />
   </head>
   <body>
-    <!-- Start loader -->
-    <div class="loader" id="loader">
-      <div class="dotted-loader" id="dotted-loader">
-        <video src="smoke.mp4" autoplay muted></video>
-        <h1>
-          <span>M</span>
-          <span>A</span>
-          <span>Z</span>
-          <span>A</span>
-          <span>Y</span>
-          <span>A</span>
-        </h1>
-      </div>
-    </div>
-    <!-- End loader -->
     <!-- whatssap -->
     <div class="callus d-flex justify-content-center align-items-center">
       <a
@@ -39,9 +24,9 @@
         target="_blank"
         rel="noopener noreferrer "
         class="fs-6 fw-bold list-unstyled"
-        >راسلنا واتس اب</a
       >
-      <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-whatsapp"></i
+      ></a>
     </div>
     <!-- whatssap -->
     <!-- start navbar  -->
@@ -123,31 +108,76 @@
     <!-- start landing  -->
     <div class="landing text-center" id="home">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-6 text-center pt-5 pb-5">
-            <p class="text-white pt-4 pb-3">
-              شركة برمجيات توفر لك تصميم مواقع وتصميم تطبيقات لتحقيق أهداف
-              مشروعك
-            </p>
-            <button type="button" class="btn btn-primary">إبدأ أول خطوة</button>
-          </div>
-          <div class="d-none col-lg-6 d-lg-block">
-            <img src="imgs/webhosting_0.png" class="img-fluid w-75" alt="" />
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-12 col-lg-6 text-center pt-lg-5 pb-5">
+                  <p class="text-white pt-4 pb-3">
+                    شركة برمجيات توفر لك تصميم مواقع وتصميم تطبيقات لتحقيق أهداف
+                    مشروعك
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    إبدأ أول خطوة
+                  </button>
+                </div>
+                <div class="images col-lg-6 d-lg-block">
+                  <img
+                    src="imgs/webhosting_0.png"
+                    class="img-fluid w-75"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-12 col-lg-6 text-center pt-lg-5 pb-5">
+                  <p class="text-white pt-4 pb-3">
+                    شركة مزايا رقم 1 توفر لك تصميم مواقع وتصميم تطبيقات لتحقيق
+                    أهداف مشروعك
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    إبدأ أول خطوة
+                  </button>
+                </div>
+                <div class="images col-lg-6 d-lg-block">
+                  <img src="imgs/sl0.png" class="img-fluid w-100" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <p class="landtext text-white pt-4 pb-2">
           انضم إلى أكثر من 120 عميل وثقوا في خدماتنا على مدار أكثر من 10 سنوات
         </p>
-        <div class="images">
-          <img src="imgs/worker/a.png" alt="..." />
-          <img src="imgs/worker/b.png" alt="..." />
-          <img src="imgs/worker/c.png" alt="..." />
-          <img src="imgs/worker/d.png" alt="..." />
-          <img src="imgs/worker/gf.png" alt="..." />
-          <img src="imgs/worker/ma.png" alt="..." />
-          <img src="imgs/worker/r.png" alt="..." />
-          <img src="imgs/worker/z.png" alt="" />
-          <img src="imgs/worker/nb.png" alt="" />
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide images-worker">
+              <img src="imgs/worker/3e.jpg" class="img-fluid" alt="" />
+              <img src="imgs/worker/a.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/b.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/c.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/d.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/gf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/d.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/gf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/v.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide images-worker">
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+              <img src="imgs/worker/icf.png" class="img-fluid" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -496,62 +526,353 @@
       <p class="pt-5 fw-bold fs-3">
         لاتكتفي بما نخبرك به عن جودة خدماتنا ولكن شاهد مايقوله عملائنا
       </p>
-      <div class="container pt-5 mt-5">
-        <div class="cards row row-cols-1 row-cols-md-3 g-4">
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card h-100">
-              <img src="imgs/s1.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">هاني الظاهري</h5>
-                <p class="ph-title">رئيس مجلس إدارة مجموعة التسويق</p>
-
-                <p class="card-text text-black-50">
-                  <span class="qtop">❞</span>
-                  نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول البرمجية
-                  لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز التي يتميز بها
-                  شريكنا التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
-                  القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته لوضع الحلول
-                  التقنية المناسبة لمشاريعنا الإلكترونية .
-                  <span class="qbot">❝</span>
-                </p>
+      <div class="container mt-5">
+        <div class="swiper mySwiper d-lg-block d-none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s1.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هاني الظاهري</h5>
+                      <p class="ph-title">رئيس مجلس إدارة مجموعة التسويق</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة ولانتردد في الاستفادة من
+                        مهاراته وإمكاناته لوضع الحلول التقنية المناسبة لمشاريعنا
+                        الإلكترونية .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
+                      <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card h-100">
-              <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
-                <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
-                <p class="card-text text-black-50">
-                  <span class="qtop">❞</span>
-                  نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول البرمجية
-                  لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز التي يتميز بها
-                  شريكنا التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
-                  القناعة .
-                  <span class="qbot">❝</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="card h-100">
-              <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">هيا حسين</h5>
-                <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
-                <p class="card-text text-black-50">
-                  <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق الأوسط
-                  عندما نفكر بالحلول البرمجية لا يمكننا تجاهل الكفاءة والدقة
-                  وسرعة الإنجاز التي يتميز بها شريكنا التقني الدائم المهندس جهاد
-                  أبودقة . ومازلنا نؤكد هذه القناعة ولانتردد في الاستفادة من
-                  مهاراته وإمكاناته.
-                  <span class="qbot">❝</span>
-                </p>
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s1.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هاني الظاهري</h5>
+                      <p class="ph-title">رئيس مجلس إدارة مجموعة التسويق</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة ولانتردد في الاستفادة من
+                        مهاراته وإمكاناته لوضع الحلول التقنية المناسبة لمشاريعنا
+                        الإلكترونية .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
+                      <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="swiper mySwiper d-lg-none d-md-block d-none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
+                      <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
+                      <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
+                      <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper d-lg-none d-md-none d-block">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
+                      <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">م/ عادل فتحي</h5>
+                      <p class="ph-title">المدير العام لمكتوب كيوب ديزاين</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>
+                        نحن في مجموعة تسويق الشرق الأوسط عندما نفكر بالحلول
+                        البرمجية لا يمكننا تجاهل الكفاءة والدقة وسرعة الإنجاز
+                        التي يتميز بها شريكنا التقني الدائم المهندس جهاد أبودقة
+                        . ومازلنا نؤكد هذه القناعة .
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="card h-100">
+                    <img src="imgs/s3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">هيا حسين</h5>
+                      <p class="ph-title">مسؤولة التقنية بجمعية ديسكا</p>
+                      <p class="card-text text-black-50">
+                        <span class="qtop">❞</span>نحن في مجموعة تسويق الشرق
+                        الأوسط عندما نفكر بالحلول البرمجية لا يمكننا تجاهل
+                        الكفاءة والدقة وسرعة الإنجاز التي يتميز بها شريكنا
+                        التقني الدائم المهندس جهاد أبودقة . ومازلنا نؤكد هذه
+                        القناعة ولانتردد في الاستفادة من مهاراته وإمكاناته.
+                        <span class="qbot">❝</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
     <!-- end wrokers -->
@@ -746,6 +1067,28 @@
       <span> لتكنولجيا المعلومات </span>
     </div>
     <!-- end footer -->
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/jquery.easypiechart.js"></script>
     <script>
