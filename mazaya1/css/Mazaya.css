@@ -225,6 +225,7 @@ ul {
   z-index: 1;
   animation: rotate 3s linear infinite;
   cursor: pointer;
+  transition: 0.4s;
 }
 .logos .box:hover .circles {
   height: 200px;
@@ -242,6 +243,7 @@ ul {
   z-index: 2;
   cursor: pointer;
   filter: grayscale(1);
+  transition: 0.4s;
 }
 .logos .box:hover .circle img {
   filter: grayscale(0);
@@ -335,6 +337,7 @@ ul {
   left: 0;
   top: 0;
   z-index: 2;
+  transition: 0.3s;
 }
 .move-card .tq .image::before {
   background: url(../imgs/worker/vd.png);
@@ -363,6 +366,7 @@ ul {
   bottom: 0;
   background-color: #0c476f;
   z-index: 2;
+  transition: 0.3s;
 }
 .move-card .tq .image::after {
   background: url(../imgs/worker/vd.png);
