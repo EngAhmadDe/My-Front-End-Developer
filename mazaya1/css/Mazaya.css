@@ -323,6 +323,7 @@ ul {
   box-shadow: 0 0 10px #ddd inset;
   height: 400px;
   width: 300px;
+  transition: 0.3s;
 }
 .move-card .card .image {
   position: relative;
@@ -497,9 +498,77 @@ ul {
   color: var(--green-color);
   font-weight: bold;
 }
-.skills .container {
-  position: relative;
+.skills .circles-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
+.skills .circle-progress {
+  border-radius: 50%;
+  position: relative;
+  width: 9.3em;
+  height: 9.3em;
+  color: white;
+  background-color: #535050;
+}
+.skills .circle-inner {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8em;
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19192d;
+}
+.skills .circle-inner::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.5em;
+  height: 6.5em;
+  z-index: -1;
+}
+.skills .circle-progress h1 {
+  font-size: 2em;
+}
+.skills .circle-progress svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skills .track {
+  fill: none;
+}
+.skills .progress {
+  fill: none;
+  stroke: #17c9d2;
+  stroke-width: 13;
+  /* set progress to 0  */
+  stroke-dasharray: 630;
+  stroke-dashoffset: 630;
+  transition: 1s ease-in-out;
+}
+.skills .circle-progress h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
+  text-transform: uppercase;
+  padding-top: 70px;
+  font-size: 22px;
+}
+/* small  */
 .skills .box h2 {
   text-align: center;
   color: white;
@@ -522,6 +591,7 @@ ul {
   top: 0;
   left: 0;
 }
+/* end small  */
 /* end skills  */
 /* start worker */
 .wrokers {
