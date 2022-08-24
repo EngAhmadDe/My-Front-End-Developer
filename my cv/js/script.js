@@ -6,13 +6,13 @@ let handleButtonClick = e => {
     let targetSection = e.target.getAttribute("data-section");
     let section = document.querySelector(targetSection);
     targetSection !== "#about" ?
-    card.classList.add("is-active") :
-    card.classList.remove("is-active");
+    card.classList.add("active") :
+    card.classList.remove("active");
     card.setAttribute("data-state", targetSection);
-    sections.forEach(s => s.classList.remove("is-active"));
-    buttons.forEach(b => b.classList.remove("is-active"));
-    e.target.classList.add("is-active");
-    section.classList.add("is-active");
+    sections.forEach(s => s.classList.remove("active"));
+    buttons.forEach(b => b.classList.remove("active"));
+    e.target.classList.add("active");
+    section.classList.add("active");
 };
 
 buttons.forEach(btn => {
