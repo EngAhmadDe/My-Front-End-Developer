@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cv</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cv">
+      <div class="carde"></div>
+      <div class="mycv" data-state="#about">
+        <div class="card-header">
+          <div
+            class="card-cover"
+            style="background-image: url(img/boy.jfif)"
+          ></div>
+          <img src="img/fd.png" alt="Avatar" class="card-avatar" />
+          <h1 class="card-fullname">Eng Ahmed Abu Daqqa</h1>
+          <h2 class="card-jobtitle">Front End Developer</h2>
+        </div>
+        <div class="card-main">
+          <div class="card-section is-active" id="about">
+            <div class="card-content">
+              <div class="card-subtitle">ABOUT</div>
+              <p class="card-desc">
+                My name is Ahmed Abd-Alhalim Abu Daqqa,<br />
+                I'm 25 years old, I live in Palestine, I'm a civil engineer.
+              </p>
+            </div>
+            <div class="card-social">
+              <a href="https://www.facebook.com/ahmad23400/" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/ahmedabudaqa" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/ahmedadaqqa/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://github.com/EngAhmadDe/My-Front-End-Developer.git"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card-section" id="experience">
+            <div class="card-content">
+              <div class="card-subtitle">WORK EXPERIENCE</div>
+              <div class="card-timeline">
+                <div class="card-item" data-year="2020">
+                  <div class="card-item-title">Civil Engineer</div>
+                  <div class="card-item-desc">
+                    I worked as a site engineer in the UAE and then returned to
+                    Palestine and volunteered at the Plaza Company, where we
+                    worked on constructing an additional floor in the College of
+                    Science and Technology
+                  </div>
+                </div>
+                <div class="card-item" data-year="2021">
+                  <div class="card-item-title">Customer Service</div>
+                  <div class="card-item-desc">
+                    I have worked in a rosomat company for more than a year in
+                    this field.
+                  </div>
+                </div>
+                <div class="card-item" data-year="2021">
+                  <div class="card-item-title">Graphic Design</div>
+                  <div class="card-item-desc">
+                    I have taken intensive courses and created many designs that
+                    helped me to become a professional in this field
+                  </div>
+                </div>
+                <div class="card-item" data-year="2022">
+                  <div class="card-item-title">Front-End Developer</div>
+                  <div class="card-item-desc">
+                    I have taken intensive courses in this field and created
+                    many websites
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-section" id="contact">
+            <div class="card-content">
+              <div class="card-subtitle">Contact</div>
+              <div class="card-contact-wrapper">
+                <div class="card-contact">
+                  <i class="fa-solid fa-location-dot"></i> Palestine - Gaza
+                  Strip - Bani Suheila - Salah al-Din Street
+                </div>
+                <div class="card-contact">
+                  <i class="fa-solid fa-phone"></i> +972595266755
+                </div>
+                <div class="card-contact">
+                  <i class="fa-solid fa-envelope"></i> ahmeddaqqa97@gmail.com
+                </div>
+                <button class="contact-me">
+                  <a href="http://wa.me/972595266755" target="_blank"
+                    >WORK TOGETHER</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="is-active" data-section="#about">ABOUT</button>
+            <button data-section="#experience">EXPERIENCE</button>
+            <button data-section="#contact">CONTACT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
