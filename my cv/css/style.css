@@ -52,32 +52,31 @@ ul {
   border-radius: 10px;
   box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
 }
-.mycv.is-active .card-header {
+.mycv.active .card-header {
   height: 80px;
 }
-.mycv.is-active .card-cover {
+.mycv.active .card-cover {
   height: 100px;
   top: -50px;
 }
-.mycv.is-active .card-avatar {
+.mycv.active .card-avatar {
   transform: none;
   left: 20px;
   width: 50px;
   height: 50px;
   bottom: 10px;
 }
-.mycv.is-active .card-fullname,
-.mycv.is-active .card-jobtitle {
+.mycv.active .card-name,
+.mycv.active .card-job {
   left: 86px;
   transform: none;
-  bottom: 5px;
 }
-.mycv.is-active .card-fullname {
+.mycv.active .card-name {
   bottom: 18px;
   font-size: 18px;
 }
-.mycv.card.is-active .card-jobtitle {
-  bottom: 0px;
+.mycv.active .card-job {
+  bottom: 5px;
   letter-spacing: 1px;
   font-size: 10px;
 }
@@ -120,7 +119,7 @@ ul {
   left: 50%;
   transform: translateX(-50%) translateY(-64px);
 }
-.card-fullname {
+.card-name {
   position: absolute;
   bottom: 7px;
   font-size: 20px;
@@ -130,7 +129,7 @@ ul {
   transform: translateY(-10px) translateX(-50%);
   left: 50%;
 }
-.card-jobtitle {
+.card-job {
   position: absolute;
   bottom: 0;
   font-size: 11px;
@@ -215,7 +214,7 @@ ul {
   outline: 0;
   border-bottom: 3px solid transparent;
 }
-.card-buttons button.is-active,
+.card-buttons button.active,
 .card-buttons button:hover {
   color: #2b2c48;
   border-bottom: 3px solid #8a84ff;
@@ -229,7 +228,7 @@ ul {
 .card-section {
   display: none;
 }
-.card-section.is-active {
+.card-section.active {
   display: block;
   animation: fadeIn 0.6s both;
 }
